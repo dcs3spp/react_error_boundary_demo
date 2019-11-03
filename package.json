@@ -1,5 +1,5 @@
 {
-  "name": "react temporary scratch application",
+  "name": "react-redux-fetch-error-handling-demo",
   "version": "0.0.0",
   "private": true,
   "dependencies": {
@@ -20,5 +20,7 @@
   },
   "devDependencies": {
     "react-scripts": "latest"
-  }
+  },
+  "keywords": [],
+  "description": "small redux react app to illustrate issue with fetch error handling and error boundaries: see https://github.com/facebook/react/issues/17219"
 }

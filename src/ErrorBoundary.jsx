@@ -1,11 +1,10 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
-import { withRouter } from 'react-router';
-import { Link } from 'react-router-dom';
-import { UnregisterCallback } from 'history';
+import { withRouter } from "react-router";
+import { Link } from "react-router-dom";
 
 export class ErrorBoundary extends Component {
-  static homePath = '/';
+  static homePath = "/";
 
   unlisten = undefined;
 
@@ -14,7 +13,7 @@ export class ErrorBoundary extends Component {
     this.state = {
       hasError: false,
       error: undefined,
-      info: undefined,
+      info: undefined
     };
     this.goHome = this.goHome.bind(this);
   }
@@ -35,7 +34,7 @@ export class ErrorBoundary extends Component {
     this.setState({
       hasError: true,
       error: error,
-      info: info,
+      info: info
     });
   }
 
@@ -48,7 +47,7 @@ export class ErrorBoundary extends Component {
       return (
         <React.Fragment>
           <p>An error occurred</p>
-          <Link to = "/">Return Home</Link>
+          <Link to="/">Return Home</Link>
         </React.Fragment>
       );
     }
@@ -58,5 +57,3 @@ export class ErrorBoundary extends Component {
 }
 
 export default withRouter(ErrorBoundary);
-
-
