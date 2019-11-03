@@ -1,13 +1,11 @@
-import { combineEpics, ofType } from 'redux-observable';
+import { ofType } from 'redux-observable';
 
 import { of } from 'rxjs';
-import { catchError, filter, map, mergeMap, switchMap, tap } from 'rxjs/operators';
+import { catchError, map, switchMap, tap } from 'rxjs/operators';
 
 
 import { 
-  FETCH_POSTS_ERROR, 
-  FETCH_POSTS_REQUEST, 
-  FETCH_POSTS_SUCCESS,
+  FETCH_POSTS_REQUEST,
   postsSuccess,
   postsError, 
 } from '../redux/actions';
